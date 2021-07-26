@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<h1>Users Details</h1>
+<table>
+  <tr>
+    <th>username</th>
+    <th>role</th>
+    <th>age</th>
+    <th>email</th>
+    <th>hobby</th>
+ </tr>
+  {% for user in usersDetails %}
+ <tr>
+  <td>{{user[0]}}</td>
+  <td>{{user[1]}}</td>
+  <td>{{user[2]}}</td>
+  <td>{{user[3]}}</td>
+  <td>{{user[4]}}</td>
+ </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
